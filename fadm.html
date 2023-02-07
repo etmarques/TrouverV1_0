@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Trouver - atesto dos serviços de assistente administrativo</title>
+    <style>
+        .input-group-text{
+            width: 120px;
+        }
+
+        .elA {
+            border: 1px solid grey;
+        }
+
+        #cutFalta, #addFalta {
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            transition: all 1s;
+        } 
+
+        #cutFalta {
+            background-image: url(assets/img/minus-cirlce-svgrepo-com.svg);
+            
+        }
+
+        #cutFalta:hover {
+            background-image: url(assets/img/minus-black-cirlce-svgrepo-com.svg);
+            transform: scale(1.1);
+        }
+
+        #addFalta {
+            background-image: url(assets/img/add-circle-svgrepo-com.svg);
+        }
+
+        #addFalta:hover {
+            background-image: url(assets/img/add-black-circle-svgrepo-com.svg);
+            transform: scale(1.1);
+        }
+
+        #totalGlosas {
+            border: 1px solid grey;
+            color: red;
+            font-weight: bolder;
+        }
+
+    </style>
+
+    <script defer src="script.js" type="module"></script>
+
+</head>
+<body class=" bg-gradient">
+    <form action="" class="m-5 mb-0 border p-5 bg-light rounded-3">
+        <h2 class="col-12 blockquote text-uppercase">Formulário de atesto de serviços</h2>
+        <h3 class="col-12 blockquote-footer">Assistentes Administrativos</h3>
+        
+        <div class="container m-0 p-0">
+            <hr>
+            <div class="row g-2">
+                <div class="form-floating col-md-4">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="NNN/AAAA">
+                    <label for="floatingInput">Contrato nº</label>
+                </div>
+                
+                <div class="form-floating col-md-4">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="ex: PSU/SMA">
+                    <label for="floatingInput">Unidade</label>
+                </div>
+                <div class="form-floating  col-md-4">
+                    <input type="month" class="form-control" id="floatingInput" placeholder="ex: PSU/SMA">
+                    <label for="floatingInput">Competência</label>
+                </div>
+            </div>
+            <hr>
+
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                    <div class="d-inline h-6">
+                    A contratada prestou os serviços de acordo com o previsto no contrato?
+                    </div>
+                    
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class=" d-inline">
+                    A contratada disponibilizou colaboradores devidamente uniformizados?
+                    </div>
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class=" d-inline">
+                    A contratada disponibilizou colaboradores devidamente identificados?
+                    </div>
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class=" d-inline">
+                        Os colaboradores cumpriram integralmente a jornada de trabalho?
+                    </div>
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                    </div>
+                </li>
+            </ol>
+            <hr>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 150px"></textarea>
+                <label for="floatingTextarea2" class="ps-3">5. Liste os nomes de todos os colaboradores que prestaram serviços no período:</label>
+            </div>
+            <hr>
+            <div class="d-inline p-3 fw-bold text-uppercase">
+                6. Os colaboradores cumpriram integralmente a jornada de trabalho?
+            </div>
+            <div class="form-check form-check-inline ms-3 fw-bold">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
+                <label class="form-check-label text-uppercase" for="inlineRadio1">Sim</label>
+            </div>
+            <div class="form-check form-check-inline fw-bold text-uppercase">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Não</label>
+            </div>
+            <hr>
+            <!--CAMPO FALTAS-->
+            <div id="listaFaltas"></div>
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="ms-3 p-1 rounded-2 bg-white visually-hidden" id="totalGlosas">
+                    Não há glosas por ausência de posto.
+                </div>
+                <div id="insereFalta" class="d-flex justify-content-end visually-hidden">
+                    <button type="button" class=" p-0 border-0" id="cutFalta"></button>
+                    <button type="button" class="p-0 ms-2 border-0" id="addFalta"></button>
+                </div>
+            </div>
+            
+
+            <hr>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 150px"></textarea>
+                <label for="floatingTextarea2" class="ps-3">7. Informações adicionais relevantes</label>
+            </div>
+            <hr>
+            <div class="ps-3">
+                8. De acordo com as atribuições a mim proferidas por portaria de fiscalização de contrato, atesto, para os devidos fins, que os serviços foram prestados conforme informações prestadas acima. Encaminhe-se à Equipe de Gestão Contratual da SAD4R para continuidade do fluxo do procedimento administrativo.
+            </div>
+            <div class="pt-3 pb-3 d-flex justify-content-end">
+                <div class="form-floating col-md-4">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="NNN/AAAA">
+                    <label for="floatingInput">Local</label>
+                </div>
+                <div class="form-floating col-md-4">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="ex: PSU/SMA">
+                    <label for="floatingInput">Data</label>
+                </div>
+            </div>
+            <div class="pt-0 pb-3 d-flex justify-content-center">
+                <div class="form-floating col-md-4">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nome" style="width: 500px;">
+                    <label for="floatingInput">Nome do fiscal setorial</label>
+                </div>
+            </div>
+            <hr>
+            <div class="pt-3 ps-3 blockquote-footer">
+                OBSERVAÇÃO: APÓS O PREENCHIMENTO, O DOCUMENTO DEVE SER JUNTADO NO RESPECTIVO NUP DE PAGAMENTO E ASSINADO NO SUPERSAPIENS PELO FISCAL QUE PREENCHEU O FORMULÁRIO.
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary disabled me-2">Enviar</button>
+                <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
+            </div>
+        </div>       
+    </form>
+    <footer class="ps-5 mt-1 mb-3">
+        <p class="blockquote-footer p-3 pb-0 mb-0">
+            2023. Fomulário FAS-ASSADM.v2.0
+        </p>
+        
+         
+    </footer>
+
+    
+    
+    
+</body>
+</html>
