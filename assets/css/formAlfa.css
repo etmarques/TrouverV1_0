@@ -1,0 +1,88 @@
+        :root {
+            --corBack: #e5e5e5;
+            --corPlatinum: #e5e5e5;
+            --corLapisLazuli: #26619c;
+            --corTimberwolf: #DBD4D3;
+        }
+        
+        body {
+            -webkit-print-color-adjust: exact;
+        }
+                
+
+        .formHead {
+            border-bottom: 1px solid grey;
+        }
+
+        hr {
+            color: grey
+        }
+
+        .logo {
+            width: 100px;
+            height: 60px;
+            background-image: url(../img/trouverLogoBlack.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .elA {
+            border: 1px solid grey;
+        }
+
+        body {
+            background-color: var(--corBack);
+        }
+
+        #cutFalta,
+        #addFalta {
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s;
+        }
+
+        #cutFalta {
+            background-image: url(../img/minus-cirlce-svgrepo-com.svg);
+
+        }
+
+        #cutFalta:hover,
+        #addFalta:hover {
+            filter: invert(1);
+            border-radius: 50%;
+            transform: scale(1.1);
+        }
+
+        #addFalta {
+            background-image: url(../img/add-circle-svgrepo-com.svg);
+        }
+
+        #totalGlosas {
+            border: 1px solid grey;
+            color: red;
+            font-weight: bolder;
+        }
+
+        @media screen and (max-width: 480px) {
+            .formHeadH2 {
+                font-size: 2.4vmax;
+            }
+            .formHeadH3 {
+                font-size: 1.8vmax;
+            }
+
+            .nomeLabel {
+                font-size: 2.4vmax;
+            }
+
+            .logo {
+                width: 70px;
+                height: 40px;
+            }
+
+        }
+

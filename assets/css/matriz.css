@@ -1,0 +1,182 @@
+        :root {
+            --corBack: #e5e5e5;
+            --corPlatinum: #e5e5e5;
+            --corLapisLazuli: #26619c;
+            --corTimberwolf: #DBD4D3;
+        }
+
+        body {
+            -webkit-print-color-adjust: exact;
+            background-color: var(--corBack);
+        }
+        
+
+        .formHead {
+            border-bottom: 1px solid grey;
+        }
+
+        hr {
+            color: grey
+        }
+
+        .logo {
+            width: 100px;
+            height: 60px;
+            background-image: url(../img/trouverLogoBlack.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .formID {
+            border-bottom: 1px solid black;
+        }
+
+        #showPro, #showImp {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: black;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .linha {
+            border: 1px solid ;
+            border-left: 12px solid;
+            border-radius: 0.5%;
+        }
+
+        #cutIJ,
+        #addIJ {
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: all 0.4s;
+        }
+
+        #cutIJ {
+            background-image: url(../img/minus-cirlce-svgrepo-com.svg);
+        }
+
+        #cutIJ:hover,
+        #addIJ:hover {
+            filter: invert(1);
+            border-radius: 50%;
+            transform: scale(1.1);
+        }
+
+        #addIJ {
+            background-image: url(../img/add-circle-svgrepo-com.svg);
+        }
+
+        .subX, .subY, .mat {
+            width: 30px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        .subX, .subY {
+            font-size: 12px;
+            color: grey;
+            position: relative;
+        }
+
+        .subY {
+            left: 8px;
+            top: 8px;
+        }
+
+        .subX {
+            left: 6px;
+            bottom: 1px;
+        }
+        
+        .mat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bolder;
+            color: whitesmoke;
+            opacity: .3;
+            
+        }
+        
+        #mat11, #mat12, #mat13, #mat21, #mat31 {
+            background-color: green;
+            
+        }
+
+        #mat14, #mat15, #mat22, #mat23, #mat32, #mat41, #mat51 {
+            background-color: gold;
+            
+        }
+
+        #mat24, #mat25, #mat33, #mat34, #mat42, #mat43, #mat52 {
+            background-color: orange;
+            
+        }
+
+        #mat35, #mat44, #mat45, #mat53, #mat54, #mat55 {
+            background-color: red;
+            
+        }
+        
+        @media screen and (max-width: 480px) {
+                        
+            .formHeadH2 {
+                font-size: 2.4vmax;
+            }
+            .formHeadH3 {
+                font-size: 1.8vmax;
+            }
+
+            .nomeLabel {
+                font-size: 2.4vmax;
+            }
+
+            .logo {
+                width: 70px;
+                height: 40px;
+            }
+
+        }
+
+        .myTooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .myTooltip .tooltiptext {
+            visibility: hidden;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 1px;
+            border-radius: 6px;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+            width: 220px;
+            top: 80%;
+            left: 100%;
+            margin-left: -220px;
+            /* Use half of the width (120/2 = 60), to center the tooltip */
+        }
+
+        .tooltiptext {
+            font-size: 12px;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .myTooltip:hover .tooltiptext {
+            visibility: visible;
+        }

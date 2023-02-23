@@ -1,0 +1,173 @@
+:root {
+    --corBack: #e5e5e5;
+    --corPlatinum: #e5e5e5;
+    --corRaisinBlack: #212738;
+    --corLapisLazuli: #26619c;
+    --corPoppy: #DA2C38;
+    --corDarkSpringGreen: #226F54;
+    --corTimberwolf: #DBD4D3;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    -webkit-print-color-adjust: exact;
+}
+
+.navbar {
+    background-color: var(--corBack);
+
+}
+.navbar-brand {
+    background-image: url(../img/trouverLogoBlack.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 60px;
+}
+
+
+header {
+    background-color: var(--corBack);   
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    transition: all 0.5s;
+    color: black;
+    width: 15rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    color: black;
+}
+
+.card-img-top {
+    height: 120px;
+}
+
+.cardBI {
+    background-image: url(../img/chart-colum-svgrepo-com.svg);
+    height: 260px;
+}
+
+.cardForm {
+    background-image: url(../img/checklist-svgrepo-com.svg);
+    height: 240px;
+}
+
+.cardRisco {
+    background-image: url(../img/matrix-svgrepo-com.svg);
+    height: 240px;
+}
+
+.cardBI:hover {
+    background-image: url(../img/chart-colum-svgrepo-comHOVER.svg);
+    
+}
+
+.cardForm:hover {
+    background-image: url(../img/checklist-svgrepo-comHOVER.svg);
+    
+}
+
+.cardRisco:hover {
+    background-image: url(../img/matrix-svgrepo-comHOVER.svg);
+}
+
+.titleBI {
+    position: absolute;
+    font-weight: bold;
+    top: 250px;
+    left: 4.0rem;
+}
+
+.titleBInot {
+    position: absolute;
+    font-weight: bold;
+    top: 275px;
+    left: 4.9rem;
+    transition: all .3s;
+
+}
+
+.titleForm {
+    position: absolute;
+    font-weight: bold;
+    top: 240px;
+    left: 1rem;
+}
+
+.titleRisco {
+    position: absolute;
+    font-weight: bold;
+    top: 240px;
+    left: 3.5rem;
+}
+
+footer {
+    background-color: var(--corRaisinBlack);
+
+}
+
+footer > div > p {
+    color: var(--corBack);
+    font-size: 13px;
+}
+
+footer > div > button {
+    background-image: url(../img/info-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+footer > a {
+        background-image: url(../img/trouverLogoPlatinum.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 20px;
+}
+
+.modal-header {
+    background-color: var(--corRaisinBlack);
+}
+
+.modal-title {
+    color: var(--corPlatinum);
+}
+
+.btn-closeModal{
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 770px) {
+    
+    main {
+            padding-top: 30px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+    }
+}

@@ -1,0 +1,742 @@
+<div id="tabela" class="ms-3 m-2">
+    <div id="linha1" class="linha row gap-1 p-3 mt-3" style="border-color: red;">
+        <div class="h6 text-uppercase text-secondary">
+            Item #1
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaA1">                        </textarea>
+                <label for="floatingTextareaA1" class="ps-3">
+                    Atividade ou iniciativa
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaB1">                        </textarea>
+                <label for="floatingTextareaB1" class="ps-3">
+                    Risco
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaC1">                        </textarea>
+                <label for="floatingTextareaC1" class="ps-3">
+                    Causa
+                </label>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaD1">                        </textarea>
+                <label for="floatingTextareaD1" class="ps-3">
+                    Dano ou consequência
+                </label>
+            </div>
+        </div>
+        <div id="tdPro1" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeA1" class="form-label">PROBABILIDADE
+            </label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeA1" value="2">
+                <div class="myTooltip border-0">
+                    <p id="showPro">4</p>
+                    <span class="tooltiptext">Alta (de 31% a 50%).</span>
+                </div>
+            </div>
+        </div>
+        <div id="tdImp1" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeB1" class="form-label">IMPACTO</label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeB1" value="2">
+                <div class="myTooltip border-0">
+                    <p id="showImp">4</p>
+                    <span class="tooltiptext">Alto: afeta severamente (de 40% a 70%) a qualidade ou o prazo ou o custo
+                        da entrega do processo de trabalho.</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tipo de Risco</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultA1" checked="">
+                <label class="form-check-label" for="flexSwitchCheckDefaultA1">Financeiro</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultB1">
+                <label class="form-check-label" for="flexSwitchCheckDefaultB1">Operacional</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultC1">
+                <label class="form-check-label" for="flexSwitchCheckDefaultC1">Legal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tratamento</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultA1">
+                <label class="form-check-label" for="flexRadioDefaultA1">
+                    Controlar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultB1"
+                    checked="">
+                <label class="form-check-label" for="flexRadioDefaultB1">
+                    Reduzir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultC1">
+                <label class="form-check-label" for="flexRadioDefaultC1">
+                    Mitigar
+                </label>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaE1"></textarea>
+                <label for="floatingTextareaE1" class="ps-3">
+                    Risco residual
+                </label>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaF1"></textarea>
+                    <label for="floatingTextareaF1" class="ps-3">
+                        Ações Preventivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputA1">
+                    <label for="floatingInputA1">Responsável</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaG1"></textarea>
+                    <label for="floatingTextareaG1" class="ps-3">
+                        Ações Corretivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputB1">
+                    <label for="floatingInputB1">Responsável</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaH1"></textarea>
+                <label for="floatingTextareaH1" class="ps-3">
+                    Item de controle de gestão
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="linha2" class="linha row gap-1 p-3 mt-3" style="border-color: orange;">
+        <div class="h6 text-uppercase text-secondary">
+            Item #2
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaA2">                        </textarea>
+                <label for="floatingTextareaA2" class="ps-3">
+                    Atividade ou iniciativa
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaB2">                        </textarea>
+                <label for="floatingTextareaB2" class="ps-3">
+                    Risco
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaC2">                        </textarea>
+                <label for="floatingTextareaC2" class="ps-3">
+                    Causa
+                </label>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaD2">                        </textarea>
+                <label for="floatingTextareaD2" class="ps-3">
+                    Dano ou consequência
+                </label>
+            </div>
+        </div>
+        <div id="tdPro2" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeA2" class="form-label">PROBABILIDADE
+            </label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeA2" value="3">
+                <div class="myTooltip border-0">
+                    <p id="showPro">3</p>
+                    <span class="tooltiptext">Média (de 11% a 30%).</span>
+                </div>
+            </div>
+        </div>
+        <div id="tdImp2" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeB2" class="form-label">IMPACTO</label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeB2" value="3">
+                <div class="myTooltip border-0">
+                    <p id="showImp">4</p>
+                    <span class="tooltiptext">Alto: afeta severamente (de 40% a 70%) a qualidade ou o prazo ou o custo
+                        da entrega do processo de trabalho.</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tipo de Risco</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultA2" checked="">
+                <label class="form-check-label" for="flexSwitchCheckDefaultA2">Financeiro</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultB2">
+                <label class="form-check-label" for="flexSwitchCheckDefaultB2">Operacional</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultC2">
+                <label class="form-check-label" for="flexSwitchCheckDefaultC2">Legal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tratamento</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefaultA2">
+                <label class="form-check-label" for="flexRadioDefaultA2">
+                    Controlar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefaultB2"
+                    checked="">
+                <label class="form-check-label" for="flexRadioDefaultB2">
+                    Reduzir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefaultC2">
+                <label class="form-check-label" for="flexRadioDefaultC2">
+                    Mitigar
+                </label>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaE2"></textarea>
+                <label for="floatingTextareaE2" class="ps-3">
+                    Risco residual
+                </label>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaF2"></textarea>
+                    <label for="floatingTextareaF2" class="ps-3">
+                        Ações Preventivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputA2">
+                    <label for="floatingInputA2">Responsável</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaG2"></textarea>
+                    <label for="floatingTextareaG2" class="ps-3">
+                        Ações Corretivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputB2">
+                    <label for="floatingInputB2">Responsável</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaH2"></textarea>
+                <label for="floatingTextareaH2" class="ps-3">
+                    Item de controle de gestão
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="linha3" class="linha row gap-1 p-3 mt-3" style="border-color: orange;">
+        <div class="h6 text-uppercase text-secondary">
+            Item #3
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaA3">                        </textarea>
+                <label for="floatingTextareaA3" class="ps-3">
+                    Atividade ou iniciativa
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaB3">                        </textarea>
+                <label for="floatingTextareaB3" class="ps-3">
+                    Risco
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaC3">                        </textarea>
+                <label for="floatingTextareaC3" class="ps-3">
+                    Causa
+                </label>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaD3">                        </textarea>
+                <label for="floatingTextareaD3" class="ps-3">
+                    Dano ou consequência
+                </label>
+            </div>
+        </div>
+        <div id="tdPro3" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeA3" class="form-label">PROBABILIDADE
+            </label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeA3">
+                <div class="myTooltip border-0">
+                    <p id="showPro">2</p>
+                    <span class="tooltiptext">Baixa (de 6% a 10%).</span>
+                </div>
+            </div>
+        </div>
+        <div id="tdImp3" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeB3" class="form-label">IMPACTO</label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeB3">
+                <div class="myTooltip border-0">
+                    <p id="showImp">5</p>
+                    <span class="tooltiptext">Altíssimo: inviabiliza a(s) entrega(s) do processo de trabalho.</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tipo de Risco</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultA3">
+                <label class="form-check-label" for="flexSwitchCheckDefaultA3">Financeiro</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultB3">
+                <label class="form-check-label" for="flexSwitchCheckDefaultB3">Operacional</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultC3">
+                <label class="form-check-label" for="flexSwitchCheckDefaultC3">Legal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tratamento</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefaultA3">
+                <label class="form-check-label" for="flexRadioDefaultA3">
+                    Controlar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefaultB3">
+                <label class="form-check-label" for="flexRadioDefaultB3">
+                    Reduzir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefaultC3">
+                <label class="form-check-label" for="flexRadioDefaultC3">
+                    Mitigar
+                </label>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaE3"></textarea>
+                <label for="floatingTextareaE3" class="ps-3">
+                    Risco residual
+                </label>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaF3"></textarea>
+                    <label for="floatingTextareaF3" class="ps-3">
+                        Ações Preventivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputA3">
+                    <label for="floatingInputA3">Responsável</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaG3"></textarea>
+                    <label for="floatingTextareaG3" class="ps-3">
+                        Ações Corretivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputB3">
+                    <label for="floatingInputB3">Responsável</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaH3"></textarea>
+                <label for="floatingTextareaH3" class="ps-3">
+                    Item de controle de gestão
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="linha4" class="linha row gap-1 p-3 mt-3" style="border-color: orange;">
+        <div class="h6 text-uppercase text-secondary">
+            Item #4
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaA4">                        </textarea>
+                <label for="floatingTextareaA4" class="ps-3">
+                    Atividade ou iniciativa
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaB4">                        </textarea>
+                <label for="floatingTextareaB4" class="ps-3">
+                    Risco
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaC4">                        </textarea>
+                <label for="floatingTextareaC4" class="ps-3">
+                    Causa
+                </label>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaD4">                        </textarea>
+                <label for="floatingTextareaD4" class="ps-3">
+                    Dano ou consequência
+                </label>
+            </div>
+        </div>
+        <div id="tdPro4" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeA4" class="form-label">PROBABILIDADE
+            </label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeA4">
+                <div class="myTooltip border-0">
+                    <p id="showPro">2</p>
+                    <span class="tooltiptext">Baixa (de 6% a 10%).</span>
+                </div>
+            </div>
+        </div>
+        <div id="tdImp4" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeB4" class="form-label">IMPACTO</label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeB4">
+                <div class="myTooltip border-0">
+                    <p id="showImp">5</p>
+                    <span class="tooltiptext">Altíssimo: inviabiliza a(s) entrega(s) do processo de trabalho.</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tipo de Risco</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultA4">
+                <label class="form-check-label" for="flexSwitchCheckDefaultA4">Financeiro</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultB4">
+                <label class="form-check-label" for="flexSwitchCheckDefaultB4">Operacional</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultC4">
+                <label class="form-check-label" for="flexSwitchCheckDefaultC4">Legal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tratamento</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefaultA4">
+                <label class="form-check-label" for="flexRadioDefaultA4">
+                    Controlar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefaultB4">
+                <label class="form-check-label" for="flexRadioDefaultB4">
+                    Reduzir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefaultC4">
+                <label class="form-check-label" for="flexRadioDefaultC4">
+                    Mitigar
+                </label>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaE4"></textarea>
+                <label for="floatingTextareaE4" class="ps-3">
+                    Risco residual
+                </label>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaF4"></textarea>
+                    <label for="floatingTextareaF4" class="ps-3">
+                        Ações Preventivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputA4">
+                    <label for="floatingInputA4">Responsável</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaG4"></textarea>
+                    <label for="floatingTextareaG4" class="ps-3">
+                        Ações Corretivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputB4">
+                    <label for="floatingInputB4">Responsável</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaH4"></textarea>
+                <label for="floatingTextareaH4" class="ps-3">
+                    Item de controle de gestão
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="linha5" class="linha row gap-1 p-3 mt-3" style="border-color: orange;">
+        <div class="h6 text-uppercase text-secondary">
+            Item #5
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaA5">                        </textarea>
+                <label for="floatingTextareaA5" class="ps-3">
+                    Atividade ou iniciativa
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaB5">                        </textarea>
+                <label for="floatingTextareaB5" class="ps-3">
+                    Risco
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaC5">                        </textarea>
+                <label for="floatingTextareaC5" class="ps-3">
+                    Causa
+                </label>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" placeholder=""
+                    id="floatingTextareaD5">                        </textarea>
+                <label for="floatingTextareaD5" class="ps-3">
+                    Dano ou consequência
+                </label>
+            </div>
+        </div>
+        <div id="tdPro5" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeA5" class="form-label">PROBABILIDADE
+            </label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeA5">
+                <div class="myTooltip border-0">
+                    <p id="showPro">2</p>
+                    <span class="tooltiptext">Baixa (de 6% a 10%).</span>
+                </div>
+            </div>
+        </div>
+        <div id="tdImp5" class="d-inline-block col-sm-12 col-md-3 ms-3 mt-3">
+            <label for="customRangeB5" class="form-label">IMPACTO</label>
+            <div class="d-flex gap-2">
+                <input type="range" class="form-range" min="1" max="5" step="1" id="customRangeB5">
+                <div class="myTooltip border-0">
+                    <p id="showImp">4</p>
+                    <span class="tooltiptext">Alto: afeta severamente (de 40% a 70%) a qualidade ou o prazo ou o custo
+                        da entrega do processo de trabalho.</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tipo de Risco</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultA5">
+                <label class="form-check-label" for="flexSwitchCheckDefaultA5">Financeiro</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultB5">
+                <label class="form-check-label" for="flexSwitchCheckDefaultB5">Operacional</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultC5">
+                <label class="form-check-label" for="flexSwitchCheckDefaultC5">Legal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-2 ms-5">
+            <p class="pb-1 mb-0">Tratamento</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefaultA5">
+                <label class="form-check-label" for="flexRadioDefaultA5">
+                    Controlar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefaultB5">
+                <label class="form-check-label" for="flexRadioDefaultB5">
+                    Reduzir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefaultC5">
+                <label class="form-check-label" for="flexRadioDefaultC5">
+                    Mitigar
+                </label>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaE5"></textarea>
+                <label for="floatingTextareaE5" class="ps-3">
+                    Risco residual
+                </label>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaF5"></textarea>
+                    <label for="floatingTextareaF5" class="ps-3">
+                        Ações Preventivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputA5">
+                    <label for="floatingInputA5">Responsável</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-sm-12 col-md-7">
+                <div class="form-floating">
+                    <textarea class="form-control ps-3" id="floatingTextareaG5"></textarea>
+                    <label for="floatingTextareaG5" class="ps-3">
+                        Ações Corretivas
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 flex-grow-1">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputB5">
+                    <label for="floatingInputB5">Responsável</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea class="form-control ps-3" id="floatingTextareaH5"></textarea>
+                <label for="floatingTextareaH5" class="ps-3">
+                    Item de controle de gestão
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

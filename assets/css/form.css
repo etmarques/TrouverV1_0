@@ -1,0 +1,120 @@
+:root {
+    --corBack: #e5e5e5;
+    --corPlatinum: #e5e5e5;
+    --corRaisinBlack: #212738;
+    --corLapisLazuli: #26619c;
+    --corPoppy: #DA2C38;
+    --corDarkSpringGreen: #226F54;
+    --corTimberwolf: #DBD4D3;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    -webkit-print-color-adjust: exact;
+}
+
+.navbar {
+    background-color: var(--corBack);
+
+}
+.navbar-brand {
+    background-image: url(../img/trouverLogoBlack.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 60px;
+}
+
+
+header {
+    background-color: var(--corBack);
+}
+
+.card {
+    transition: all 0.5s;
+    height: 280px;
+    border: 1px solid grey;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--corDarkSpringGreen);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-img-top {
+    height: 150px;
+    opacity: .75;
+}
+
+.cardOFF {
+    opacity: 0.5;
+
+}
+
+.cardOFF:hover {
+    transform: none;
+    border: 1px solid grey;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--corDarkSpringGreen);
+    border: 1px solid var(--corDarkSpringGreen);
+    transition: all 0.2s;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: var(--corDarkSpringGreen);
+    border: 1px solid var(--corDarkSpringGreen);
+    transform: scale(1.03);
+    
+}
+
+.btnOFF:hover, .btnOFF:active, .btnOFF:focus  {
+    transform: none;
+    border: none;
+    box-shadow: none;
+}
+
+footer {
+    background-color: var(--corRaisinBlack);
+    margin-top: auto;
+}
+
+footer>div>p {
+    color: var(--corBack);
+    font-size: 13px;
+}
+
+footer>div>button {
+    background-image: url(../img/info-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+footer>a {
+    background-image: url(../img/trouverLogoPlatinum.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 20px;
+}
+
+.modal-header {
+    background-color: var(--corRaisinBlack);
+}
+
+.modal-title {
+    color: var(--corPlatinum);
+}
+
+.btn-closeModal {
+    filter: invert(100%);
+}
