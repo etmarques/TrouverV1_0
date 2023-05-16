@@ -67,6 +67,8 @@
             font-weight: bolder;
         }
 
+        
+
         @media screen and (max-width: 480px) {
             .formHeadH2 {
                 font-size: 2.4vmax;
@@ -86,3 +88,13 @@
 
         }
 
+        .infoIMR {
+            background-image: url(../img/info-svgrepo-comBlack.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            top: 2px;
+
+        }
