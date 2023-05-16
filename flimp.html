@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/formAlfa.css">
     <link rel="shortcut icon" href="assets/img/trouverLogoBlack.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Trouver - atesto dos serviços de assistente administrativo</title>
+    <title>Trouver - atesto dos serviços de limpeza</title>
     <script defer src="script.js" type="module"></script>
 
 </head>
@@ -42,56 +42,91 @@
             <hr>
 
             <ol class="list-group list-group-numbered">
-                <li class="list-group-item">
-                    <div class="d-inline h-6">
-                    A contratada prestou os serviços de acordo com o previsto no contrato?
+                <li class="list-group-item"> 
+                    <span>Insira a quantidade de ocorrências observadas para cada IMR abaixo:</span> 
+                    <span>
+                        <button type="button" class="infoIMR m-1 border-0" data-bs-toggle="modal" data-bs-target="#descIMR">
+                        </button></span>                    
+                    <div class="input-group mt-2 ms-3 d-flex flex-wrap">                        
+                        <div class="input-group-text bg-body text-wrap col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Inobservância na utilização do uniforme, uso de uniforme incompleto ou inadequado, excessivamente danificado ou deixar de fornecer conjunto completo de uniforme aos funcionários. Pontos por ocorrência: 0,1">Não utilização de uniformes.</div>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 alert-primary fw-bolder text-danger me-1" id="imrLimp1" aria-describedby="basic-addon3">
                     </div>
-                    
-                    <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <div class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Deixar de fornecer EPI´s nos prazos estabelecidos, quando estes forem necessários à execução do serviço. Pontos por ocorrência: 0,1">Não utilização de EPIs.</div>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger" id="imrLimp2"
+                        aria-describedby="basic-addon3">
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Atrasar pagamento de salários (a partir do 6º dia útil do mês). Pontos por ocorrência: 0,2">Atraso no pagamento de salários</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp3" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Atrasar pagamento de VA´s e VT´s (a partir do 1º dia útil do mês). Pontos por ocorrência: 0,2">Atraso no pagamento VAs e VTs</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp4" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Atrasar ou sair antes do horário estabelecido pelo contrato ou fiscalização (até 2 horas, caso tempo seja maior deverá ser considerado falta). Pontos por ocorrência: 0,1">Atrasos e saídas antecipadas</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp5" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Recusar-se (funcionário) a prestar serviço determinado ou inobservar tempo determinado para o atendimento de solicitação da fiscalização. Pontos por ocorrência: 0,2">Não cumprimento das tarefas</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger" id="imrLimp6" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Deixar de tratar com urbanidade colegas, servidores e público em geral. Pontos por ocorrência: 0,2">Falta de urbanidade e tratamento</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp7" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Deixar de manter o ambiente de trabalho organizado e limpo. Pontos por ocorrência: 0,1">Falta de organização do ambiente de trabalho</span> 
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp8" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Danificar materiais ou equipamentos durante o desenvolvimento de suas atividades. Pontos por ocorrência: 0,1">Falta de zelo com materiais e equipamentos</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp9" aria-describedby="basic-addon3">
+                    </div>   
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Deixar de atender (Preposto) às solicitações da fiscalização do contratos. Pontos por ocorrência: 0,2">Falha no atendimento do Preposto</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp10" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mt-1 ms-3 d-flex flex-wrap">
+                        <span class="input-group-text bg-body col-sm-9 col-md-10 text-wrap text-start" id="basic-addon3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Fornecer materiais e equipamentos em menor quantidade, ou de menor qualidade, do que o previsto no contrato. Pontos por ocorrência: 1">Falha no fornecimento de equipamentos e materiais</span>
+                        <input type="number" min="0" value="0" class="form-control col-sm-3 col-md-2 me-1  alert-primary fw-bolder text-danger"
+                        id="imrLimp11" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="container-fluid input-group mt-1 ms-3 pt-1 pb-1 d-flex flex-wrap">
+                        <div class="bg-body text-wrap text-danger fw-bolder text-start col-sm-9 col-md-10" id="IMRmsg">Desconto sobre o valor mensal do contrato em função da pontuação do IMR: </div>
+                        <div class=" fw-bolder text-danger col-sm-3 col-md-2 ps-4"  id="imrLimpTot">0%
+                        </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class=" d-inline">
-                    A contratada disponibilizou colaboradores devidamente uniformizados?
-                    </div>
-                    <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class=" d-inline">
-                    A contratada disponibilizou colaboradores devidamente identificados?
-                    </div>
-                    <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
-                    </div>
-                </li>
+                
             </ol>
             <hr>
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                     style="height: 150px"></textarea>
-                <label for="floatingTextarea2" class="ps-3">4. Liste os nomes de todos os colaboradores que prestaram serviços no período:</label>
+                <label for="floatingTextarea2" class="ps-3">2. Liste os nomes de todos os colaboradores que prestaram serviços no período:</label>
             </div>
             <hr>
             <div class="d-inline p-3 fw-bold text-uppercase">
-                5. Houve faltas ou afastamentos no período?
+                3. Houve faltas ou afastamentos no período?
             </div>
             <div class="form-check form-check-inline ms-3 fw-bold">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
@@ -119,11 +154,11 @@
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                     style="height: 150px"></textarea>
-                <label for="floatingTextarea2" class="ps-3">6. Informações adicionais relevantes</label>
+                <label for="floatingTextarea2" class="ps-3">4. Informações adicionais relevantes</label>
             </div>
             <hr>
             <div class="ps-3">
-                7. De acordo com as atribuições a mim proferidas por portaria de fiscalização de contrato, atesto, para os devidos fins, que os serviços foram prestados conforme informações prestadas acima. Encaminhe-se à Equipe de Gestão Contratual da SAD4R para continuidade do fluxo do procedimento administrativo.
+                5. De acordo com as atribuições a mim proferidas por portaria de fiscalização de contrato, atesto, para os devidos fins, que os serviços foram prestados conforme informações prestadas acima. Encaminhe-se à Equipe de Gestão Contratual da SAD4R para continuidade do fluxo do procedimento administrativo.
             </div>
             <div class="pt-3 pb-3 d-flex gap-2 flex-wrap row justify-content-end">
                 <div class="form-floating col-md-4">
@@ -151,18 +186,52 @@
                 <button class="btn btn-primary disabled me-2">Enviar</button>
                 <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
             </div>
-        </div>       
+        </div> 
+        
+
     </form>
     <footer class="ps-3 mt-1 mb-3">
         <p class="blockquote-footer p-3 pb-0 mb-0">
-            2023. Fomulário FAS-ASSADM.v2.1
+            2023. Fomulário FAS-IMRLIMP.v2.1
         </p>
         
          
     </footer>
 
-    
-    
-    
+    <!-- Modal -->
+    <div class="modal fade" id="descIMR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Critérios de pontuação do IMR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cada indicador possui pontos, que variam de 0,1 a 1. A respectiva pontuação é multiplicada pelas ocorrências registradas. Por fim, a soma dos resultados de cada indicador será utilizada para informar o resultado final da avaliação do IMR, da seguinte forma: <br><br>
+                    <ul>
+                        <li>1 ponto: Advertência;</li>
+                        <li>2 pontos: Desconto de 0,5% na fatura;</li>
+                        <li>3 pontos: Desconto de 1% na fatura;</li>
+                        <li>4 pontos: Desconto de 2% na fatura;</li>
+                        <li>5 pontos: Desconto de 3% na fatura;</li>
+                        <li>6 pontos: Desconto de 4% na fatura;</li>
+                        <li>7 pontos: Desconto de 5% na fatura;</li>
+                        <li>8 pontos: Desconto de 6% na fatura;</li>
+                        <li>Acima de 8 pontos: Desconto de 10% na fatura.</li>
+                    </ul>
+                    A utilização do presente IMR não impede que a fiscalização do contrato instaure, a qualquer tempo, processo de aplicação de penalidade por descumprimento contratual, garantido o contraditório e a ampla defesa. <br>
+                    O cometimento reiterado de ocorrências em um indicador específico do IMR dará ensejo ao processo de aplicação de penalidade por descumprimento contratual. <br>
+                    Além de eventuais descontos na fatura, por ocasião das ocorrências registradas por meio do IMR, a contratada estará sujeita a glosa por serviço não prestado (e.g.: ausência de reposição em postos de trabalho, interrupção no serviço prestado, não entrega de materiais, dentre outros). <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script>
+    const modal = new bootstrap.Modal('.modal');
+</script>
 </html>

@@ -261,9 +261,88 @@ function zeraGlosas() {
     totalGlosas.innerHTML = 'Não há glosas por ausência de posto.'    
 }
 
+//calcula o imr de limpeza
+function calcularIMR() {
+
+    const im1 = Number(document.getElementById("imrLimp1").value);
+    const im2 = Number(document.getElementById("imrLimp2").value);
+    const im3 = Number(document.getElementById("imrLimp3").value);
+    const im4 = Number(document.getElementById("imrLimp4").value);
+    const im5 = Number(document.getElementById("imrLimp5").value);
+    const im6 = Number(document.getElementById("imrLimp6").value);
+    const im7 = Number(document.getElementById("imrLimp7").value);
+    const im8 = Number(document.getElementById("imrLimp8").value);
+    const im9 = Number(document.getElementById("imrLimp9").value);
+    const im10 = Number(document.getElementById("imrLimp10").value);
+    const im11 = Number(document.getElementById("imrLimp11").value);
+
+    // calcula o total de pontos de acordo com o peso de cada IMR
+    const pontosIMR = parseFloat((im1 + im2 + im5 + im8 + im9)*0.1 + (im3 + im4 + im6 + im7 + im10)*0.2 + im11);
+
+    switch (true) {
+        case (pontosIMR >= 1 && pontosIMR < 2):
+            document.getElementById("imrLimpTot").textContent = "";
+            document.getElementById("IMRmsg").textContent = "Em função da quantidade de ocorrências registradas, deve-se instaurar processo de advertência.";
+            break;
+        case (pontosIMR >= 2 && pontosIMR < 3):
+            document.getElementById("imrLimpTot").textContent = "0,5%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 3 && pontosIMR < 4):
+            document.getElementById("imrLimpTot").textContent = "1%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 4 && pontosIMR < 5):
+            document.getElementById("imrLimpTot").textContent = "2%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 5 && pontosIMR < 6):
+            document.getElementById("imrLimpTot").textContent = "3%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 6 && pontosIMR < 7):
+            document.getElementById("imrLimpTot").textContent = "4%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 7 && pontosIMR < 8):
+            document.getElementById("imrLimpTot").textContent = "5%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 8 && pontosIMR < 9):
+            document.getElementById("imrLimpTot").textContent = "6%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        case (pontosIMR >= 9):
+            document.getElementById("imrLimpTot").textContent = "10%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+            break;
+        default:
+            document.getElementById("imrLimpTot").textContent = "0%";
+            document.getElementById("IMRmsg").textContent = "Desconto sobre o valor mensal do contrato em função da pontuação do IMR:";
+
+    }
+}
+
+// Adiciona os listeners aos inputs
+document.getElementById("imrLimp1").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp2").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp3").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp4").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp5").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp6").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp7").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp8").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp9").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp10").addEventListener("input", calcularIMR);
+document.getElementById("imrLimp11").addEventListener("input", calcularIMR);
 
 
 
+/*
 
+*/
 
-
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
