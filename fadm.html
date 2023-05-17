@@ -14,7 +14,7 @@
 </head>
 <body class="container-fluid container-xl">
     
-    <form action="" class=" m-sm-1 mb-sm-0 m-md-4 mb-md-0 border p-3 bg-light rounded-3">
+    <form action="" method="post" class=" m-sm-1 mb-sm-0 m-md-4 mb-md-0 border p-3 bg-light rounded-3">
 
         <div class="formHead mb-4 pb-1 d-flex align-items-end justify-content-between">
             <div class="d-flex flex-column justify-content-between">
@@ -48,12 +48,12 @@
                     </div>
                     
                     <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="questao1S" value="option1">
+                        <label class="form-check-label" for="questao1S">Sim</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="questao1N" value="option2">
+                        <label class="form-check-label" for="questao1N">Não</label>
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -61,12 +61,12 @@
                     A contratada disponibilizou colaboradores devidamente uniformizados?
                     </div>
                     <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="questao2S" value="option1">
+                        <label class="form-check-label" for="questao2S">Sim</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="questao2N" value="option2">
+                        <label class="form-check-label" for="questao2N">Não</label>
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -74,12 +74,12 @@
                     A contratada disponibilizou colaboradores devidamente identificados?
                     </div>
                     <div class="form-check form-check-inline ms-3">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="questao3S" value="option1">
+                        <label class="form-check-label" for="questao3S">Sim</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="questao3N" value="option2">
+                        <label class="form-check-label" for="questao3N">Não</label>
                     </div>
                 </li>
             </ol>
@@ -149,7 +149,7 @@
             </div>
             <div class="d-flex justify-content-end">
                 <button class="btn btn-primary disabled me-2">Enviar</button>
-                <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
+                <button class="btn btn-primary" id="imprimirBtn" onclick="window.print(); return false">Imprimir</button>
             </div>
         </div>       
     </form>
@@ -160,9 +160,12 @@
         
          
     </footer>
+<script>
+    // Referência ao botão de impressão
+    var imprimirBtn = document.getElementById('imprimirBtn');
 
-    
-    
+</script>
+
     
 </body>
 </html>

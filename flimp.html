@@ -14,7 +14,7 @@
 </head>
 <body class="container-fluid container-xl">
     
-    <form action="" class=" m-sm-1 mb-sm-0 m-md-4 mb-md-0 border p-3 bg-light rounded-3">
+    <form id="formID" action="" method="post" class=" m-sm-1 mb-sm-0 m-md-4 mb-md-0 border p-3 bg-light rounded-3">
 
         <div class="formHead mb-4 pb-1 d-flex align-items-end justify-content-between">
             <div class="d-flex flex-column justify-content-between">
@@ -126,7 +126,7 @@
             </div>
             <hr>
             <div class="d-inline p-3 fw-bold text-uppercase">
-                3. Houve faltas ou afastamentos no período?
+                3. OS COLABORADORES CUMPRIRAM AS JORNADAS DE TRABALHO, SEM FALTAS OU AFASTAMENTOS?
             </div>
             <div class="form-check form-check-inline ms-3 fw-bold">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
@@ -184,7 +184,7 @@
             </div>
             <div class="d-flex justify-content-end">
                 <button class="btn btn-primary disabled me-2">Enviar</button>
-                <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
+                <button class="btn btn-primary" onclick="window.print(); return false">Imprimir</button>
             </div>
         </div> 
         
@@ -224,7 +224,7 @@
                     Além de eventuais descontos na fatura, por ocasião das ocorrências registradas por meio do IMR, a contratada estará sujeita a glosa por serviço não prestado (e.g.: ausência de reposição em postos de trabalho, interrupção no serviço prestado, não entrega de materiais, dentre outros). <br>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>

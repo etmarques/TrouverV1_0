@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/formAlfa.css">
+    <link rel="shortcut icon" href="assets/img/trouverLogoBlack.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Trouver - atesto dos serviços de limpeza</title>
+    <script defer src="script.js" type="module"></script>
+
+</head>
+<body class="container-fluid container-xl">
+    
+    <form action="" class=" m-sm-1 mb-sm-0 m-md-4 mb-md-0 border p-3 bg-light rounded-3">
+
+        <div class="formHead mb-4 pb-1 d-flex align-items-end justify-content-between">
+            <div class="d-flex flex-column justify-content-between">
+                <a href="form.html" class="formHeadH2 col-12 m-1 blockquote text-uppercase h2 text-decoration-none text-dark">Formulários de atesto</a>
+                <h3 class="formHeadH3 col-12 m-0 blockquote-footer">Limpeza e Conservação</h3>
+            </div>
+            <a href="index.html" class="logo m-0 p-0"></a>
+        </div>
+
+        <div class="container m-0 p-0">
+            <hr>
+            <hr>
+            <hr>
+            <div class="d-inline p-3 fw-bold text-uppercase">
+                3. OS COLABORADORES CUMPRIRAM AS JORNADAS DE TRABALHO, SEM FALTAS OU AFASTAMENTOS?
+            </div>
+            <div class="form-check form-check-inline ms-3 fw-bold">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
+                <label class="form-check-label text-uppercase" for="inlineRadio1">Sim</label>
+            </div>
+            <div class="form-check form-check-inline fw-bold text-uppercase">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Não</label>
+            </div>
+            <hr>
+            <!--CAMPO FALTAS-->
+            <div id="listaFaltas"></div>
+            <div id="listaFaltas">
+                <div class="m-3 p-3 rounded-2 elA" id="elA0">
+                    <div class="d-flex flex-wrap gap-2 ps-4" id="elB">
+                        <div class="form-floating flex-grow-1" id="elB1">
+                            <input class="form-control" type="text" id="floatingInput"
+                                name="" value="" placeholder="none">
+                            <label class="nomeLabel" for="floatingInput">Nome do colaborador
+                                que faltou
+                            </label>
+                        </div>
+                        <div class="form-floating flex-grow-0" id="elB2">
+                            <input class="form-control" type="date" id="floatingInput"
+                                name="" value="" placeholder="none">
+                            <label class="" for="floatingInput">De</label></div>
+                        <div class="form-floating flex-grow-0" id="elB3">
+                            <input class="form-control" type="date" id="floatingInput"
+                            name="" value="" placeholder="none">
+                            <label class="" for="floatingInput">Até</label>
+                        </div>
+                        <div class="ps-2 bg-secondary text-white rounded-2 " id="elB4">
+                            <p class="pt-1 m-0">Teve substituto?</p>
+                            <div class="form-check form-check-inline" id="elB42">
+                                <input class="form-check-input" type="radio"
+                                id="inlineRadio1" name="subs0" value="option1" placeholder="none">
+                                <label class="form-check-label" for="inlineRadio1">Sim
+                                </label></div>
+                            <div class="form-check form-check-inline  " id="elB43"><input class="form-check-input" type="radio"
+                                    id="inlineRadio1" name="subs0" value="option2" placeholder="none"><label
+                                    class="form-check-label" for="inlineRadio2">Não</label></div>
+                        </div>
+                    </div>
+                    <div class="d-flex  flex-wrap  justify-content-between align-items-end" id="elC">
+                        <div class="mt-1  ms-5 flex-grow-1" id="elC1">Motivo:<div class="form-check" id="elC11"><input
+                                    class="form-check-input" type="radio" id="inlineRadio1" name="motFlt0" value="option1"
+                                    placeholder="none">
+                                    <label class="form-check-label" for="inlineRadio1">Férias</label></div>
+                            <div class="form-check" id="elC12"><input class="form-check-input" type="radio" id="inlineRadio2"
+                                    name="motFlt0" value="option2" placeholder="none"><label class="form-check-label"
+                                    for="inlineRadio2">Ausência justificada</label></div>
+                            <div class="form-check" id="elC13"><input class="form-check-input" type="radio" id="inlineRadio3"
+                                    name="motFlt0" value="option3" placeholder="none"><label class="form-check-label"
+                                    for="inlineRadio3">Ausência injustificada</label></div>
+                        </div>
+                        <div class="form-floating  ms-4 flex-grow-1 mt-1 visually-hidden" id="elC2"><input class="form-control"
+                                type="text" id="floatingInput" name="" value="" placeholder="none"><label class="nomeLabel"
+                                for="floatingInput">Nome do colaborador substituto</label></div>
+                    </div>
+                </div>
+                <div class="m-3 p-3 rounded-2 elA" id="elA1">
+                    <div class="d-flex flex-wrap gap-2 ps-4" id="elB">
+                        <div class="form-floating flex-grow-1" id="elB1"><input class="form-control" type="text" id="floatingInput"
+                                name="" value="" placeholder="none"><label class="nomeLabel" for="floatingInput">Nome do colaborador
+                                que faltou</label></div>
+                        <div class="form-floating flex-grow-0" id="elB2"><input class="form-control" type="date" id="floatingInput"
+                                name="" value="" placeholder="none"><label class="" for="floatingInput">De</label></div>
+                        <div class="form-floating flex-grow-0" id="elB3"><input class="form-control" type="date" id="floatingInput"
+                                name="" value="" placeholder="none"><label class="" for="floatingInput">Até</label></div>
+                        <div class="ps-2 bg-secondary text-white rounded-2 " id="elB4">
+                            <p class="pt-1 m-0">Teve substituto?</p>
+                            <div class="form-check form-check-inline  " id="elB42"><input class="form-check-input" type="radio"
+                                    id="inlineRadio1" name="subs1" value="option1" placeholder="none"><label
+                                    class="form-check-label" for="inlineRadio1">Sim</label></div>
+                            <div class="form-check form-check-inline  " id="elB43"><input class="form-check-input" type="radio"
+                                    id="inlineRadio1" name="subs1" value="option2" placeholder="none"><label
+                                    class="form-check-label" for="inlineRadio2">Não</label></div>
+                        </div>
+                    </div>
+                    <div class="d-flex  flex-wrap  justify-content-between align-items-end" id="elC">
+                        <div class="mt-1  ms-5 flex-grow-1" id="elC1">Motivo:<div class="form-check" id="elC11"><input
+                                    class="form-check-input" type="radio" id="inlineRadio1" name="motFlt1" value="option1"
+                                    placeholder="none"><label class="form-check-label" for="inlineRadio1">Férias</label></div>
+                            <div class="form-check" id="elC12"><input class="form-check-input" type="radio" id="inlineRadio2"
+                                    name="motFlt1" value="option2" placeholder="none"><label class="form-check-label"
+                                    for="inlineRadio2">Ausência justificada</label></div>
+                            <div class="form-check" id="elC13"><input class="form-check-input" type="radio" id="inlineRadio3"
+                                    name="motFlt1" value="option3" placeholder="none"><label class="form-check-label"
+                                    for="inlineRadio3">Ausência injustificada</label></div>
+                        </div>
+                        <div class="form-floating  ms-4 flex-grow-1 mt-1 visually-hidden" id="elC2"><input class="form-control"
+                                type="text" id="floatingInput" name="" value="" placeholder="none"><label class="nomeLabel"
+                                for="floatingInput">Nome do colaborador substituto</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="ms-3 p-1 rounded-2 bg-white visually-hidden" id="totalGlosas">
+                    Não há glosas por ausência de posto.
+                </div>
+                <div id="insereFalta" class="d-flex justify-content-end visually-hidden">
+                    <button type="button" class="p-0 ms-2 border-0" id="cutFalta"></button>
+                    <button type="button" class="p-0 ms-2 border-0" id="addFalta"></button>
+                </div>
+            </div>
+            
+
+            <hr>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary disabled me-2">Enviar</button>
+                <button class="btn btn-primary" onclick="window.print()">Imprimir</button>
+            </div>
+        </div> 
+        
+
+    </form>
+    <footer class="ps-3 mt-1 mb-3">
+        <p class="blockquote-footer p-3 pb-0 mb-0">
+            2023. Fomulário FAS-IMRLIMP.v2.1
+        </p>
+        
+         
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="descIMR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Critérios de pontuação do IMR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cada indicador possui pontos, que variam de 0,1 a 1. A respectiva pontuação é multiplicada pelas ocorrências registradas. Por fim, a soma dos resultados de cada indicador será utilizada para informar o resultado final da avaliação do IMR, da seguinte forma: <br><br>
+                    <ul>
+                        <li>1 ponto: Advertência;</li>
+                        <li>2 pontos: Desconto de 0,5% na fatura;</li>
+                        <li>3 pontos: Desconto de 1% na fatura;</li>
+                        <li>4 pontos: Desconto de 2% na fatura;</li>
+                        <li>5 pontos: Desconto de 3% na fatura;</li>
+                        <li>6 pontos: Desconto de 4% na fatura;</li>
+                        <li>7 pontos: Desconto de 5% na fatura;</li>
+                        <li>8 pontos: Desconto de 6% na fatura;</li>
+                        <li>Acima de 8 pontos: Desconto de 10% na fatura.</li>
+                    </ul>
+                    A utilização do presente IMR não impede que a fiscalização do contrato instaure, a qualquer tempo, processo de aplicação de penalidade por descumprimento contratual, garantido o contraditório e a ampla defesa. <br>
+                    O cometimento reiterado de ocorrências em um indicador específico do IMR dará ensejo ao processo de aplicação de penalidade por descumprimento contratual. <br>
+                    Além de eventuais descontos na fatura, por ocasião das ocorrências registradas por meio do IMR, a contratada estará sujeita a glosa por serviço não prestado (e.g.: ausência de reposição em postos de trabalho, interrupção no serviço prestado, não entrega de materiais, dentre outros). <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const modal = new bootstrap.Modal('.modal');
+
+
+</script>
+</html>

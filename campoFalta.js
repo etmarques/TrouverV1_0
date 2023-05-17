@@ -64,27 +64,27 @@ export const criaCampoFalta = ()=> {
     const elB4 = paragrafo1.criaDiv('ps-2', ' bg-secondary', ' text-white', ' rounded-2', ' ', 'elB4', '');
     const elB41 = paragrafo1.criaP('pt-1', ' m-0', 'Teve substituto?');
     const elB42 = paragrafo1.criaDiv('form-check', ' form-check-inline', '', ' ', ' ', 'elB42', '');
-    const elB42a = paragrafo1.criaInput('form-check-input', 'radio', 'inlineRadio1', `subs${sizeFaltas}`, 'option1', 'none');
+    const elB42a = paragrafo1.criaInput('form-check-input', 'radio', `subsSim${sizeFaltas}`, `subs${sizeFaltas}`, 'option1', 'none');
 
-    const elB42b = paragrafo1.criaLabel('form-check-label', 'inlineRadio1', 'Sim');
+    const elB42b = paragrafo1.criaLabel('form-check-label', `subsSim${sizeFaltas}`, 'Sim');
     const elB43 = paragrafo1.criaDiv('form-check', ' form-check-inline', '', ' ', ' ', 'elB43', '');
-    const elB43a = paragrafo1.criaInput('form-check-input', 'radio', 'inlineRadio1', `subs${sizeFaltas}`, 'option2', 'none');
-    const elB43b = paragrafo1.criaLabel('form-check-label', 'inlineRadio2', 'Não');
+    const elB43a = paragrafo1.criaInput('form-check-input', 'radio', `subsNao${sizeFaltas}`, `subs${sizeFaltas}`, 'option2', 'none');
+    const elB43b = paragrafo1.criaLabel('form-check-label', `subsNao${sizeFaltas}`, 'Não');
 
     const elC = paragrafo1.criaDiv('d-flex', '  flex-wrap', '  justify-content-between', ' align-items-end', '', 'elC', '');
     const elC1 = paragrafo1.criaDiv('mt-1', '  ms-5', ' flex-grow-1', '', '', 'elC1', 'Motivo:');
 
     const elC11 = paragrafo1.criaDiv('form-check', '', '', '', '', 'elC11', '');
-    const elC11a = paragrafo1.criaInput('form-check-input', 'radio', 'inlineRadio1', `motFlt${sizeFaltas}`, 'option1', 'none');
-    const elC11b = paragrafo1.criaLabel('form-check-label', 'inlineRadio1', 'Férias');
+    const elC11a = paragrafo1.criaInput('form-check-input', 'radio', `motFltFer${sizeFaltas}`, `motFlt${sizeFaltas}`, 'option1', 'none');
+    const elC11b = paragrafo1.criaLabel('form-check-label', `motFltFer${sizeFaltas}`, 'Férias');
 
     const elC12 = paragrafo1.criaDiv('form-check', '', '', '', '', 'elC12', '');
-    const elC12a = paragrafo1.criaInput('form-check-input', 'radio', 'inlineRadio2', `motFlt${sizeFaltas}`, 'option2', 'none');
-    const elC12b = paragrafo1.criaLabel('form-check-label', 'inlineRadio2', 'Ausência justificada');
+    const elC12a = paragrafo1.criaInput('form-check-input', 'radio', `motFltAju${sizeFaltas}`, `motFlt${sizeFaltas}`, 'option2', 'none');
+    const elC12b = paragrafo1.criaLabel('form-check-label', `motFltAju${sizeFaltas}`, 'Ausência justificada');
 
     const elC13 = paragrafo1.criaDiv('form-check', '', '', '', '', 'elC13', '');
-    const elC13a = paragrafo1.criaInput('form-check-input', 'radio', 'inlineRadio3', `motFlt${sizeFaltas}`, 'option3', 'none');
-    const elC13b = paragrafo1.criaLabel('form-check-label', 'inlineRadio3', 'Ausência injustificada');
+    const elC13a = paragrafo1.criaInput('form-check-input', 'radio', `motFltAin${sizeFaltas}`, `motFlt${sizeFaltas}`, 'option3', 'none');
+    const elC13b = paragrafo1.criaLabel('form-check-label', `motFltAin${sizeFaltas}`, 'Ausência injustificada');
 
     const elC2 = paragrafo1.criaDiv('form-floating', '  ms-4', ' flex-grow-1', ' mt-1', ' visually-hidden', `elC2`, '');
     const elC21 = paragrafo1.criaInput('form-control', 'text', 'floatingInput', '', '', 'none');
