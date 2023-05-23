@@ -346,3 +346,27 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+
+// Configurações do cliente MSAL
+const msalConfig = {
+    auth: {
+        clientId: 'e32dfbb8-9f3d-4d7b-b0f1-d91c0e8fd6e8',
+        authority: 'https://login.microsoftonline.com/common',
+        redirectUri: 'https://trouver.onrender.com/',
+        navigateToLoginRequestUrl: false
+    },
+    cache: {
+        cacheLocation: 'localStorage',
+        storeAuthStateInCookie: false
+    }
+};
+
+// Cria uma instância do cliente MSAL
+const msalClient = new msal.PublicClientApplication(msalConfig);
+
+// Opções de autenticação
+const loginRequest = {
+    scopes: ['openid', 'profile', 'User.Read']
+};
+
